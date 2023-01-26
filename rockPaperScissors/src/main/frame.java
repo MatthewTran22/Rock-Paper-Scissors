@@ -82,21 +82,21 @@ public class frame extends JFrame {
 		
 		
 		//Game button setup
-		RockPNG = new ImageIcon("/Users/matthew/eclipse-workspace/rockPaperScissors/Rock.png");
+		RockPNG = new ImageIcon(getClass().getResource("/Imgaes/Rock.png"));
 		Resize r = new Resize(RockPNG, 100, 100);
 		RockPNG = r.modified();
 		Rock = new JButton(RockPNG);
 		Rock.setBounds(170, 427, 100, 100);
 		game.add(Rock);
 		
-		PaperPNG = new ImageIcon("/Users/matthew/eclipse-workspace/rockPaperScissors/Paper.png");
+		PaperPNG = new ImageIcon(getClass().getResource("/Imgaes/Paper.png"));
 		Resize p = new Resize(PaperPNG, 100, 100);
 		PaperPNG = p.modified();
 		Paper = new JButton(PaperPNG);
 		Paper.setBounds(340, 427, 100, 100);
 		game.add(Paper);
 		
-		ScissorsPNG = new ImageIcon("/Users/matthew/eclipse-workspace/rockPaperScissors/Scissors.png");
+		ScissorsPNG = new ImageIcon(getClass().getResource("/Imgaes/Scissors.png"));
 		Resize s = new Resize(ScissorsPNG, 100, 100);
 		ScissorsPNG = s.modified();
 		Scissors = new JButton(ScissorsPNG);
